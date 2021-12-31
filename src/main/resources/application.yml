@@ -1,0 +1,174 @@
+#data:
+#  mongodb:
+#    uri: mongodb://ezshippDBA:ezshippevontex@db.ezshipp.com:1234/ezshipp
+#    db: ezshipp
+google:
+  places:
+    apikey: AIzaSyAwuHOEv1Fda_tvwm_HfrWTQZRs7Vyw7EI
+    #apikey: password(AQICAHj+gO6Blh6u6tjbptaSLWvJ2/Zmr4XM5g5EpqH4Y5CgNQHa+Nblmxtq0G46GC/dYIw7AAAAhjCBgwYJKoZIhvcNAQcGoHYwdAIBADBvBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDGkc0cw3dFJXKJvNsAIBEIBCmvpWoHfJFi7Yc0Rppk8qxXN+R/FbzqlnK9CowRAEAJ1fFfXt7XnW4n0hXg9dolFILOQsX/mbh5PT6i60kPTyR8Ed)
+  distance:
+    apikey: AIzaSyAKyFmaHxr9G00uR8ie5_E7N_JJfpk7xQw
+    #apikey: password(AQICAHj+gO6Blh6u6tjbptaSLWvJ2/Zmr4XM5g5EpqH4Y5CgNQHa+Nblmxtq0G46GC/dYIw7AAAAhjCBgwYJKoZIhvcNAQcGoHYwdAIBADBvBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDGkc0cw3dFJXKJvNsAIBEIBCmvpWoHfJFi7Yc0Rppk8qxXN+R/FbzqlnK9CowRAEAJ1fFfXt7XnW4n0hXg9dolFILOQsX/mbh5PT6i60kPTyR8Ed)
+#logging:
+#  file: /logs/service.log
+#  level:
+#    org:
+#      springframework: INFO
+#      hibernate:
+#        engine:
+#          jdbc:
+#            spi:
+#              SqlStatementLogger: WARN
+jackson:
+  serialization:
+    FAIL_ON_EMPTY_BEANS: false
+aws:
+  region: ap-south-1
+  ezshipp-biker-s3-user:
+    accesskey:  AKIAJYLSTLFBQJWNH2LQ
+    secretkey:  password(AQICAHj+gO6Blh6u6tjbptaSLWvJ2/Zmr4XM5g5EpqH4Y5CgNQHlMc2VOXe5YSyUsIWE6CfXAAAAhzCBhAYJKoZIhvcNAQcGoHcwdQIBADBwBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDPgfJK5xRi9Xb+Nv+AIBEIBDEPTpSyIfJRlH5NS3E00tCLRf3LShj6zBZr01flZJHzxD406EszxsUuNRIobCyhWYpPBx3CnOHTL2Jn9m5mHnvx5cWA==)
+  ezshipp-customer-s3-user:
+    accesskey:  AKIAJDVN4I3ZCIEFWTKQ
+    secretkey:  password(AQICAHj+gO6Blh6u6tjbptaSLWvJ2/Zmr4XM5g5EpqH4Y5CgNQHRvIPL/l6NbqTg7ShNDy/xAAAAhzCBhAYJKoZIhvcNAQcGoHcwdQIBADBwBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDGAt9k+3oU5oWJeCHgIBEIBDmF460nrO/VYdhRocnPuYrjj+6OLruYBrD2gPYDHq2yZxaajMoFGSpYvXMEhCurgwQPbLvZLXyf4EfvQEnUKpZyhPYA==)
+  restapi-user:
+      accesskey: AKIAJ2DR6HMUJG4LN2JA
+      secretkey: password(AQICAHj+gO6Blh6u6tjbptaSLWvJ2/Zmr4XM5g5EpqH4Y5CgNQGyWV9v8TRV3zeHTuXEjbMhAAAAhzCBhAYJKoZIhvcNAQcGoHcwdQIBADBwBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDIWS2G27Zfe9Ux2p/gIBEIBDTEmQQTcodYz02s5nFRcvImNMF+xnaqvOj8+fMhz1pKamLB6+k2ITPgZg9dlb5SBHbPN3hwhanGEnowqfl7RXixagPQ==)
+  smtp:
+    host: email-smtp.us-west-2.amazonaws.com
+    port: 587
+    username: AKIAJBS2N573T5PQYTDQ
+    password: password(AQICAHj+gO6Blh6u6tjbptaSLWvJ2/Zmr4XM5g5EpqH4Y5CgNQH3HomAKoel6hA7FZrdfIlqAAAAizCBiAYJKoZIhvcNAQcGoHsweQIBADB0BgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDLrufVl+y2oFFJQ+dwIBEIBH76dYi3qwPVY56YPqT04tpO0ugC+Nd7PBnTqOoAci52B97BKVkkLQ7fb+vubpWa6eyJGURiZSUpTRtlBUMpg26rTYFWxszwI=)
+testdata:
+  driverids: 22,28,29,30,40,41,42,45,50,51,52,53
+biker:
+  leave-approval:
+    emails: tejaswi@ezshipp.com
+reports:
+  path: /ezshipp-reports
+scheduledtasks:
+  enable: false
+redis:
+  host: localhost
+  port: 6379
+server:
+  port: 5000
+solutionsinfini:
+  url: https://alerts.solutionsinfini.com/api/v4
+  apikey: password(AQICAHj+gO6Blh6u6tjbptaSLWvJ2/Zmr4XM5g5EpqH4Y5CgNQHoEN5bqLlhWcPlmS4mNn3fAAAAfzB9BgkqhkiG9w0BBwagcDBuAgEAMGkGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQML0vOEv/cyO9+Nx21AgEQgDzKbHX+ct4UexpSu4hHX8GtLdzX4KlOb2LcPMDDOu7dOus3apzgJBDQ7bgy8G9ES57FSSnFQqABixRzeQU=)
+ipstack:
+  apiurl: http://api.ipstack.com
+  accesskey: dd27a0bd1ce5b63705443f028ef1a4d7
+app:
+  charges:
+    extraweight: 25
+paytm:
+  mid: iDmpVL49138024693141
+  secretkey: 8ukjMx!WeDmmTxbp
+  website: WEBSTAGING
+  callbackurl: https://securegw-stage.paytm.in/theia/paytmCallback
+---
+spring:
+  profiles: qa
+  data:
+    mongodb:
+      uri: mongodb://ezshippDBA:ezshippevontex@db.ezshipp.com:1234/ezshipp
+      db: ezshipp
+pubsub:
+  enable: false
+file:
+  upload-dir: /var/tmp/uploads
+images:
+  upload-dir: /var/tmp/images
+s3:
+  bucket: ezshipp-store  
+aws:
+  queue:
+    email:
+      name: ezshipp-qa-notification-queue
+      arn: https://sqs.ap-south-1.amazonaws.com/227505162936/ezshipp-qa-notification-queue
+    sms:
+      name: ezshipp-qa-sms-notification-queue
+      arn: https://sqs.ap-south-1.amazonaws.com/227505162936/ezshipp-qa-sms-notification-queue
+    order:
+      name: ezshipp-qa-order-queue
+      arn: https://sqs.ap-south-1.amazonaws.com/227505162936/ezshipp-qa-order-queue
+  topic:
+    email:
+      name: ezshipp-qa-notification-topic
+      arn: arn:aws:sns:ap-south-1:227505162936:ezshipp-qa-notification-topic
+    sms:
+      name: ezshipp-qa-notification-sms-topic
+      arn: arn:aws:sns:ap-south-1:227505162936:ezshipp-qa-notification-sms-topic
+    order:
+      name: ezshipp-qa-notification-order-topic
+      arn: arn:aws:sns:ap-south-1:227505162936:ezshipp-qa-notification-order-topic
+
+---
+spring:
+  profiles: dev
+#  data:
+#    mongodb:
+#      uri: mongodb://ezshippDBA:ezshippevontex@db.ezshipp.com:1234/ezshipp
+#      db: ezshipp
+pubsub:
+  enable: false
+file:
+  upload-dir: /Users/srinivasseri/uploads
+aws:
+  queue:
+    email:
+      name: ezshipp-dev-email-notification-queue
+      arn: https://sqs.ap-south-1.amazonaws.com/227505162936/ezshipp-dev-email-notification-queue]
+    sms:
+      name: ezshipp-dev-sms-notification-queue
+      arn: https://sqs.ap-south-1.amazonaws.com/227505162936/ezshipp-dev-sms-notification-queue
+  topic:
+    email:
+      name: ezshipp-dev-email-notification-topic
+      arn: arn:aws:sns:ap-south-1:227505162936:ezshipp-dev-email-notification-topic
+    sms:
+      name: ezshipp-dev-sms-notification-topic
+      arn: arn:aws:sns:ap-south-1:227505162936:ezshipp-dev-sms-notification-topic
+
+---
+spring:
+  profiles: prod
+  data:
+    mongodb:
+      uri: mongodb://ezshippDBA:ezshippevontex@db.ezshipp.com:1234/ezshipp
+      db: ezshipp
+pubsub:
+  enable: true
+file:
+  upload-dir: /var/tmp/uploads
+images:
+  upload-dir: /var/tmp/images
+s3:
+  bucket: ezshipp-store-pr    
+aws:
+  queue:
+    email:
+      name: ezshipp-prod-email-queue
+      arn: https://sqs.ap-south-1.amazonaws.com/227505162936/ezshipp-prod-email-queue
+    sms:
+      name: ezshipp-prod-sms-queue
+      arn: https://sqs.ap-south-1.amazonaws.com/227505162936/ezshipp-prod-sms-queue
+    order:
+        name: ezshipp-prod-order-queue
+        arn: https://sqs.ap-south-1.amazonaws.com/227505162936/ezshipp-prod-order-queue
+  topic:
+    email:
+      name: ezshipp-prod-email-topic
+      arn: arn:aws:sns:ap-south-1:227505162936:ezshipp-prod-email-topic
+    sms:
+      name: ezshipp-prod-sms-topic
+      arn: arn:aws:sns:ap-south-1:227505162936:ezshipp-prod-sms-topic
+    order:
+        name: ezshipp-prod-order-topic
+        arn: arn:aws:sns:ap-south-1:227505162936:ezshipp-prod-order-topic
+
+paytm:
+  mid: igQDas02082793188757
+  secretkey: DnFqc_dZX_pxpTRA
+  website: DEFAULT
+  callbackurl: https://securegw.paytm.in/theia/paytmCallback
